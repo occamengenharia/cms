@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "selective_processes",
+  "info": {
+    "name": "selective process"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "slug": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "date",
+      "required": true
+    },
+    "end_date": {
+      "type": "date",
+      "required": true
+    },
+    "collective_activity_date": {
+      "type": "date",
+      "required": true
+    },
+    "interview_start_date": {
+      "type": "date"
+    },
+    "approved_disclosure_date": {
+      "type": "date",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "slogan": {
+      "type": "text",
+      "required": true
+    },
+    "project_department_description": {
+      "type": "text",
+      "required": true
+    },
+    "people_management_department_description": {
+      "type": "text",
+      "required": true
+    },
+    "finance_department_description": {
+      "type": "text"
+    },
+    "legal_department_description": {
+      "type": "text"
+    },
+    "marketing_department_description": {
+      "type": "text",
+      "required": true
+    },
+    "photo_disclosure": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

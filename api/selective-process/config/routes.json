@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/selective-processes",
+      "handler": "selective-process.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/selective-processes/count",
+      "handler": "selective-process.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/selective-processes/:id",
+      "handler": "selective-process.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/selective-processes",
+      "handler": "selective-process.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/selective-processes/:id",
+      "handler": "selective-process.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/selective-processes/:id",
+      "handler": "selective-process.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

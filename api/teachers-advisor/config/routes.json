@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/teachers-advisors",
+      "handler": "teachers-advisor.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/teachers-advisors/count",
+      "handler": "teachers-advisor.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/teachers-advisors/:id",
+      "handler": "teachers-advisor.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/teachers-advisors",
+      "handler": "teachers-advisor.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/teachers-advisors/:id",
+      "handler": "teachers-advisor.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/teachers-advisors/:id",
+      "handler": "teachers-advisor.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

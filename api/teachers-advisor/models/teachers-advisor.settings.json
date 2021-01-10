@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teachers_advisors",
+  "info": {
+    "name": "teachers advisor"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "slug": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "academic_formation": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "link_github": {
+      "type": "string"
+    },
+    "link_linkedin": {
+      "type": "string"
+    },
+    "link_lattes": {
+      "type": "string"
+    },
+    "departament": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    }
+  }
+}

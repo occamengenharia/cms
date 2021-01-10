@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "members",
+  "info": {
+    "name": "members"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "birth_date": {
+      "type": "date"
+    },
+    "course": {
+      "type": "enumeration",
+      "enum": [
+        "ADS",
+        "CP"
+      ]
+    },
+    "ra": {
+      "type": "biginteger"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "link_github": {
+      "type": "string"
+    },
+    "link_linkedin": {
+      "type": "string"
+    },
+    "entry_date": {
+      "type": "date"
+    },
+    "output_date": {
+      "type": "date"
+    },
+    "positions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "positions.positions"
+    }
+  }
+}

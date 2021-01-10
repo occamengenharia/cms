@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_positions_positions",
+  "info": {
+    "name": "positions",
+    "icon": "user-secret"
+  },
+  "options": {},
+  "attributes": {
+    "department": {
+      "type": "enumeration",
+      "enum": [
+        "projects",
+        "financial",
+        "presidency",
+        "managementPeople",
+        "marketing",
+        "legal"
+      ],
+      "default": "projects",
+      "required": true
+    },
+    "job": {
+      "type": "enumeration",
+      "enum": [
+        "advisor",
+        "director",
+        "developer",
+        "consultant"
+      ]
+    },
+    "tasks_description": {
+      "type": "string"
+    },
+    "start_date_position": {
+      "type": "date"
+    },
+    "end_date_position": {
+      "type": "date"
+    }
+  }
+}

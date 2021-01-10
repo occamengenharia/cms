@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "registrations_processes",
+  "info": {
+    "name": "registrations process",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "cell_phone": {
+      "type": "string"
+    },
+    "birth_date": {
+      "type": "date"
+    },
+    "course": {
+      "type": "enumeration",
+      "enum": [
+        "CP",
+        "ADS"
+      ],
+      "default": "CP"
+    },
+    "period": {
+      "type": "enumeration",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "_5",
+        "_6",
+        "_7",
+        "_8",
+        "_9",
+        "_10"
+      ]
+    },
+    "interest_area": {
+      "type": "enumeration",
+      "enum": [
+        "projects",
+        "financial",
+        "managementPeople",
+        "marketing",
+        "legal"
+      ]
+    },
+    "curriculum": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
