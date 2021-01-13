@@ -17,16 +17,11 @@
     },
     "email": {
       "type": "email",
-      "required": true
+      "required": true,
+      "unique": true
     },
-    "telephone": {
+    "phone": {
       "type": "string"
-    },
-    "cell_phone": {
-      "type": "string"
-    },
-    "birth_date": {
-      "type": "date"
     },
     "course": {
       "type": "enumeration",
@@ -51,16 +46,6 @@
         "_10"
       ]
     },
-    "interest_area": {
-      "type": "enumeration",
-      "enum": [
-        "projects",
-        "financial",
-        "managementPeople",
-        "marketing",
-        "legal"
-      ]
-    },
     "curriculum": {
       "model": "file",
       "via": "related",
@@ -70,6 +55,26 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "ra": {
+      "type": "string",
+      "required": true
+    },
+    "interest_area": {
+      "type": "string",
+      "required": true
+    },
+    "answer1": {
+      "type": "text"
+    },
+    "answer2": {
+      "type": "text"
+    },
+    "answer3": {
+      "type": "text"
+    },
+    "answer4": {
+      "type": "string"
     }
   }
 }

@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "selective_processes",
   "info": {
-    "name": "selective process"
+    "name": "selective process",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -65,6 +66,10 @@
         "images"
       ],
       "plugin": "upload",
+      "required": false
+    },
+    "link_edital": {
+      "type": "string",
       "required": false
     }
   }
