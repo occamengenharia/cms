@@ -71,6 +71,18 @@
     "link_edital": {
       "type": "string",
       "required": false
+    },
+    "opening_subscriptions": {
+      "type": "date",
+      "required": true
+    },
+    "closing_subscriptions": {
+      "type": "date",
+      "required": true
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
