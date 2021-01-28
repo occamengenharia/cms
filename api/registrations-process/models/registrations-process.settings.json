@@ -75,6 +75,10 @@
     },
     "answer4": {
       "type": "string"
+    },
+    "special_need": {
+      "type": "string",
+      "default": "Não"
     }
   }
 }
