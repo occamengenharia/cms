@@ -7,31 +7,24 @@
   },
   "options": {},
   "attributes": {
-    "department": {
-      "type": "enumeration",
-      "enum": [
-        "trainee",
-        "projects",
-        "financial",
-        "presidency",
-        "managementPeople",
-        "marketing",
-        "legal"
-      ],
-      "default": "projects",
-      "required": true
-    },
     "job": {
       "type": "enumeration",
       "enum": [
-        "advisor",
-        "director",
-        "developer",
-        "consultant"
-      ]
-    },
-    "tasks_description": {
-      "type": "string"
+        "trainee",
+        "Assessor de Projetos",
+        "Diretor de Projetos",
+        "Assessor Financeiro",
+        "Diretor Financeiro",
+        "Assessor de Gestão de Pessoas",
+        "Diretor de Gestão De Pessoas",
+        "Assessor de Marketing",
+        "Diretor de Marketing",
+        "Assessor Jurídico",
+        "Diretor Jurídico",
+        "Presidente"
+      ],
+      "default": "projects",
+      "required": true
     },
     "start_date_position": {
       "type": "date"
