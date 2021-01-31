@@ -2,13 +2,15 @@
   "collectionName": "components_positions_positions",
   "info": {
     "name": "positions",
-    "icon": "user-secret"
+    "icon": "user-secret",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "department": {
       "type": "enumeration",
       "enum": [
+        "trainee",
         "projects",
         "financial",
         "presidency",
