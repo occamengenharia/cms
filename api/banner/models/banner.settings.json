@@ -16,10 +16,12 @@
       "required": true
     },
     "href": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "alt": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "photo": {
       "model": "file",
@@ -28,10 +30,11 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false
+      "required": true
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "required": true
     }
   }
 }

@@ -12,7 +12,8 @@
   },
   "attributes": {
     "slug": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "start_date": {
       "type": "date",
@@ -27,7 +28,8 @@
       "required": true
     },
     "interview_start_date": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "approved_disclosure_date": {
       "type": "date",
@@ -50,10 +52,12 @@
       "required": true
     },
     "finance_department_description": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "legal_department_description": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "marketing_department_description": {
       "type": "text",
@@ -66,11 +70,11 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false
+      "required": true
     },
     "link_edital": {
       "type": "string",
-      "required": false
+      "required": true
     },
     "opening_subscriptions": {
       "type": "date",
