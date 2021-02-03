@@ -10,7 +10,7 @@
     "job": {
       "type": "enumeration",
       "enum": [
-        "trainee",
+        "Trainee",
         "Assessor de Projetos",
         "Diretor de Projetos",
         "Assessor Financeiro",
