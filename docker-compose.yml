@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  db:
+    image: mongo
+    container_name: cms-occam-db
+    # environment:
+      # MONGO_INITDB_ROOT_USERNAME: occam-user
+      # MONGO_INITDB_ROOT_PASSWORD: occam
+    ports:
+      - '27017:27017'
+    # volumes:
+    #   - ./volumes/database:/var/lib/mongo
+    # restart: unless-stopped
