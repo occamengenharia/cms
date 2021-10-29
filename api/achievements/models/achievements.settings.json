@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "achievements",
+  "info": {
+    "name": "achievements"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "emoji": {
+      "type": "string",
+      "required": true,
+      "default": "😀"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "reward": {
+      "type": "string",
+      "required": true
+    },
+    "members": {
+      "via": "achievements",
+      "collection": "members"
+    }
+  }
+}
