@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/what-give-points",
+      "handler": "what-give-points.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/what-give-points/count",
+      "handler": "what-give-points.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/what-give-points/:id",
+      "handler": "what-give-points.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/what-give-points",
+      "handler": "what-give-points.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/what-give-points/:id",
+      "handler": "what-give-points.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/what-give-points/:id",
+      "handler": "what-give-points.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
