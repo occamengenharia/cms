@@ -1,6 +1,6 @@
 # Strapi application
 
-## Método 1:
+## Método 1 (usando banco online e npm):
 <b>· Instale as dependências:</b><br>
 ```npm install``` <br><br>
 <b>· Antes de rodar o strapi, associe o link do banco online MongoDB:</b><br>
