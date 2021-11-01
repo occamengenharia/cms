@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "levels",
   "info": {
-    "name": "Levels"
+    "name": "Levels",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,21 +11,24 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "level": {
-      "type": "string"
-    },
     "status": {
       "type": "string"
     },
+    "members": {
+      "collection": "members",
+      "via": "level"
+    },
+    "level": {
+      "type": "integer",
+      "default": 0
+    },
     "maximum_points": {
-      "type": "string"
+      "type": "integer",
+      "default": 0
     },
     "minimum_points": {
-      "type": "string"
-    },
-    "members": {
-      "via": "level",
-      "collection": "members"
+      "type": "integer",
+      "default": 0
     }
   }
 }
