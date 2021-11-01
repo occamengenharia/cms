@@ -1,10 +1,11 @@
 # Strapi application
 
 ## Método 1:
-Instalar as dependências:
-```npm install```
-Antes de rodar o strapi, associar o link do banco online MongoDB
-```Connect ➞ Connect Your Application ➞ Copie e cole o link no arquivo .env do cms (ver .env.exemplo), usando a sua senha em <password>```
-Para rodar o strapi:
-```npm run strapi```
-Com o strapi rodando, entre no link /admin e crie um usuário
+<b>· Instale as dependências:</b><br>
+```npm install``` <br><br>
+<b>· Antes de rodar o strapi, associe o link do banco online MongoDB:</b><br>
+```Connect ➞ Connect Your Application```<br>
+➞ Copie e cole o link no arquivo .env do cms (ver .env.exemplo), usando a sua senha em ```<password>``` <br><br>
+<b>· Para rodar o strapi: </b><br>
+```npm run strapi```<br><br>
+<b>· Com o strapi rodando, entre no link /admin e crie um usuário </b>
