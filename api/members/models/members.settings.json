@@ -65,11 +65,12 @@
       "dominant": true
     },
     "level": {
-      "via": "members",
-      "model": "levels"
+      "model": "levels",
+      "via": "members"
     },
     "total_experience": {
-      "type": "string"
+      "type": "integer",
+      "default": 0
     }
   }
 }

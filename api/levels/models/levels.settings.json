@@ -15,8 +15,8 @@
       "type": "string"
     },
     "members": {
-      "collection": "members",
-      "via": "level"
+      "via": "level",
+      "collection": "members"
     },
     "level": {
       "type": "integer",
