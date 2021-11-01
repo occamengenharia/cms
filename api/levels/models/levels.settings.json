@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "levels",
+  "info": {
+    "name": "Levels"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "level": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "maximum_points": {
+      "type": "string"
+    },
+    "minimum_points": {
+      "type": "string"
+    },
+    "members": {
+      "via": "level",
+      "collection": "members"
+    }
+  }
+}
