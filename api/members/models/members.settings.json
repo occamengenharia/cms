@@ -63,6 +63,14 @@
       "collection": "achievements",
       "via": "members",
       "dominant": true
+    },
+    "level": {
+      "model": "levels",
+      "via": "members"
+    },
+    "total_experience": {
+      "type": "integer",
+      "default": 0
     }
   }
 }
