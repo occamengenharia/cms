@@ -1,4 +1,7 @@
-module.exports = ({ env }) => ({
+module.exports = ({ env }) => {
+  const ssl = process.env.NODE_ENV === 'development' ? false : true;
+
+  return {
   defaultConnection: 'default',
   connections: {
     default: {
@@ -7,8 +10,8 @@ module.exports = ({ env }) => ({
         uri: env('DATABASE_URI'),
       },
       options: {
-        ssl: true,
+        ssl,
       },
     },
   },
-});
+}};
