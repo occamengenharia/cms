@@ -71,6 +71,9 @@
     "total_experience": {
       "type": "integer",
       "default": 0
+    },
+    "username_trello": {
+      "type": "string"
     }
   }
 }
